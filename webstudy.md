@@ -151,6 +151,12 @@ CSS와 HTML문서를 분리하여 제작할 경우 ``` 불필요한 마크업이
 # 크로스 브라우징 환경에서의 HTML, CSS, JavaScript 개발
 크로스 브라우징이란 ``` 어떤 환경에서 접근하여도 웹 페이지가 동등하게 작동되는 것을 말한다 ```
 
+![StatCounter-browser-ww-monthly-202102-202202](https://user-images.githubusercontent.com/73206190/157887174-cadc4ea6-9a6c-40b8-afe5-9aec14b092e3.png)
+2022년 2월 기준으로 브라우저 점유율은 구글 크롬 62.78%, 사파리 19.3%이다. (출처: https://gs.statcounter.com/)
+
+
+출처 : https://toby2009.tistory.com/37
+
 # http 및 브라우저의 동작 원리 이해
  
 
