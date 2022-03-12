@@ -149,13 +149,35 @@ CSS와 HTML문서를 분리하여 제작할 경우 ``` 불필요한 마크업이
 
 
 # 크로스 브라우징 환경에서의 HTML, CSS, JavaScript 개발
-크로스 브라우징이란 ``` 어떤 환경에서 접근하여도 웹 페이지가 동등하게 작동되는 것을 말한다 ```
+* 크로스 브라우징이란 ``` 어떤 환경에서 접근하여도 웹 페이지가 동등하게 작동되는 것을 말한다 ```
+* 크로스 브라우징이란 웹 표준 기술을 채용하여 다른 기종/플랫폼에 따라 달리 구현되는 기술을 비슷하게 만드는 것과 동시에 어느 한쪽에 최적화되어 치우치지 않도록 공통요소를 사용하여 웹 페이지를 제작하는 기법을 말한다.
+* 이는 HTML, CSS, JavaScript 작성시 W3C의 웹 규격에 맞는 코딩을 함으로써 어느 브라우저나 기기에서 사이트가 제대로 보여지고 작동되도록 하는 기법을 말한다.
 
-![StatCounter-browser-ww-monthly-202102-202202](https://user-images.githubusercontent.com/73206190/157887174-cadc4ea6-9a6c-40b8-afe5-9aec14b092e3.png)
-2022년 2월 기준으로 브라우저 점유율은 구글 크롬 62.78%, 사파리 19.3%이다. (출처: https://gs.statcounter.com/)
+출처 : https://toby2009.tistory.com/37 / https://blog.naver.com/insaweb/221926915225
+### 브라우저 점유율 (크롬, 사파리가 가장 높다)
+#### 전세계 웹 사용자들의 브라우저 점유율
+![StatCounter-browser-ww-monthly-202102-202202-bar](https://user-images.githubusercontent.com/73206190/158008606-0308b47d-0014-43d8-9f88-3fdb21960a70.png)
 
+* 2022년 2월 기준으로 브라우저 점유율은 구글 크롬 64.3%, 사파리 18.96%이다. (출처: https://gs.statcounter.com/)
+#### 한국 웹 사용자들의 브라우저 점유율
+
+![StatCounter-browser-KR-monthly-202102-202202-bar](https://user-images.githubusercontent.com/73206190/158008498-63186d92-0e7c-443f-91bd-45a77b56aa13.png)
+* 삼성 인터넷, 웨일 브라우저 항목이 높은 것을 확인할 수 있다. 
+
+### 크로스 브라우징을 해야하는 이유
+* 브라우저마다 각각 다른 글꼴이나 속성을 가지고 있기 때문에 ```동일하게 코드를 작성한다고 해도, 브라우저마다 화면이 다르게 보일 수 있다. ```
 
 출처 : https://toby2009.tistory.com/37
+
+### 크로스브라우징 하는 방법 & 확인 방법
+* 크로스브라우징 기술은 웹이 발전함에 따라 브라우징하는 방법들 또한 늘어나고 있다. <br> 전반적으로 자주 사용하는 브라우저에 대한 검사 기준을 파악 해야하며 웹 표준, 웹 접근성에 대한 이해도와 지식을 지니고 있어야 한다.
+
+* 크로스브라우징을 확인하는 일반적인 방법으로는 국제 인터넷 표준화 기구(IETF)에서 확인하는 방법이 있지만, 그 양도 많고 계속해서 업데이트 되어가기에 하나하나 확인하기에는 어렵다고 한다. <br> 따라서 W3C(World Wide Web Consortium) 통합 검사기 사이트에 도메인을 입력하여 확인하는 방법이 있다.
+*  Unicorn - W3C 통합 검사기 : https://validator.w3.org/unicorn/?ucn_lang=ko
+#### 내가 만든 사이트도 진행해보았습니다.
+![image](https://user-images.githubusercontent.com/73206190/158009082-97ca10f4-0442-4276-9716-b6a3e7c767b5.png)
+![image](https://user-images.githubusercontent.com/73206190/158009131-51a38515-7cde-4874-947c-1e36f831bbc1.png)
+* Level 3에 해당하는 검사를 통과하였다고 뜬다.
 
 # http 및 브라우저의 동작 원리 이해
  
