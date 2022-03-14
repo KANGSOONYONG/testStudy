@@ -179,6 +179,8 @@ CSS와 HTML문서를 분리하여 제작할 경우 ``` 불필요한 마크업이
 ![image](https://user-images.githubusercontent.com/73206190/158009131-51a38515-7cde-4874-947c-1e36f831bbc1.png)
 * Level 3에 해당하는 검사를 통과하였다고 뜬다.
 
+---
+
 # http 및 브라우저의 동작 원리 이해
  ### HTTP란?
  * HTTP(HyperText Transfer Protocol)는 웹상에서 정보를 주고받을 수 있는 프로토콜이다. <br> 주로 HTML 문서를 주고받는 데에 쓰인다. 
