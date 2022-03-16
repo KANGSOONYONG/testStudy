@@ -192,10 +192,10 @@ CSS와 HTML문서를 분리하여 제작할 경우 ``` 불필요한 마크업이
 ``` 
 클라이언트가 서버에게 보내는 요청 메시지는 다음과 같다.
 
-요청 내용 보기) GET /images/logo.gif HTTP/1.1 <br>
-헤더 보기) Accept-Language: en <br>
-빈 줄 (empty line) <br>
-기타 메시지를 포함하여 표시된다. <br>
+요청 내용 보기) GET /images/logo.gif HTTP/1.1
+헤더 보기) Accept-Language: en
+빈 줄 (empty line)
+기타 메시지를 포함하여 표시된다.
 ```
 * 내가 작성했던 코드의 경우 fetch API를 이용하여 통신하였습니다.
 * GET(요청), POST(생성), PUT(변경), DELETE(삭제), PATCH(일부 변경) 등이 주로 사용되는 HTTP 메소드입니다. <br> (GET, DELETE에는 요청에 body가 있지 않다.)
