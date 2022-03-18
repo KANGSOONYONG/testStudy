@@ -1,4 +1,45 @@
 # testStudy 코딩테스트 풀고, 정리하기
+### 프로그래머스_핸드폰 번호 가리기 2022_03_18
+문제
+```
+모바일은 개인정보 보호를 위해 고지서를 보낼 때 고객들의 전화번호의 일부를 가립니다.
+전화번호가 문자열 phone_number로 주어졌을 때, 전화번호의 뒷 4자리를 제외한 나머지 숫자를 전부 *으로 가린 문자열을 리턴하는 함수, solution을 완성해주세요.
+```
+작성한 코드
+```
+function solution(phone_number) {
+    if(phone_number.length > 0) {
+        let getLastNum = phone_number.substr(-4, 4);
+        let star = '*'.repeat(phone_number.length -4 );
+        let answer = star + getLastNum;
+        return answer;
+    }
+}
+```
+내가 작성한 코드는 주어진 핸드폰 번호에서 뒷번호 4개를 가져온 후, 나머지 부분은 * 를 만들어주어 붙여주었다. <br>
+너무 1차원적으로 작성한 코드라고 생각이 들어서 다른 분들의 코드를 본 후, 공부할만한 정도의 답변을 가져와봄 ( _ , JoonSukCho님)
+``` 
+function solution(phone_number) {
+   let result = []
+
+   for(let i = 0; i < phone_number.length; i++){
+      if(i < phone_number.length-4){
+          result.push('*')
+      } else {
+          result.push(phone_number[i])
+      }
+   }
+   return result.join('')
+}
+```
+result라는 빈 array를 만든 후, for문과 if문을 이용하여 result에 push 해주었음. <br> (만약 11자리의 번호가 들어왔다면 인덱스 0 ~ 6의 숫자들은 첫 번째 조건을 만족하여 * 로 들어가고, 인덱스 7 ~ 10의 숫자들은 조건을 만족하지 못하여 핸드폰 번호가 array에 차례로 push된다.
+
+이후에 완성된 result를 join을 사용하여 하나의 값으로 만들어주면 된다. <br>
+``` 
+join() : Array.join()은 배열의 원소들을 연결하여 하나의 값으로 만듭니다.
+출처 : https://www.codingfactory.net/10450
+```
+
 ### 프로그래머스_x만큼 간격이 있는 n개의 숫자 2022_03_10
 문제
 ```
@@ -21,8 +62,8 @@ function solution(x, n) {
 처음에 ``` let result = "" ``` 으로 작성하여서 숫자가 더해지지 않고, 밑에 별찍기 문제처럼 "22" "222" 이런식의 결과가 나왔음
 그래서 문자열을 숫자로 바꾸어주는 Number() 함수 이용하여 문제 풀려했는데 해결 못하였음 
 
-``` let result = 0; ```으로 하니 함수가 필요없어짐 
-
+``` 
+let result = 0; ```으로 하니 함수가 필요없어짐 
 ---
 
 
