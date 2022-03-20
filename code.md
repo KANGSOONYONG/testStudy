@@ -1,4 +1,38 @@
 # testStudy 코딩테스트 풀고, 정리하기
+### 프로그래머스_하샤드 수 2022_03_20
+문제
+```
+양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 
+예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 
+자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+```
+작성한 코드
+```
+function solution(x) {
+    let getNum = x.toString().split('');
+    let result = 0;
+    
+    for (let i = 0; i < getNum.length; i++){
+        result += Number(getNum[i]);
+    }
+    
+    if(x % result === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+```
+주어진 수를 문자열로 만든 후, split 메소드를 사용하면 각 자리수가 배열로 반환됩니다. <br>
+해왔던 것처럼 result에 getNum 배열의 값들을 더해줍니다. <br>
+주어진 수를 result로 나누었을 때 몫이 0이면 하샤드 수가 되니, if문 조건으로 만들어줍니다. <br>
+``` 
+조건문을 아래와 같이 삼항 조건 연산자로 작성해주면 더 깔끔한 코드가 될 것 같습니다.
+return x % result === 0 ? true : false;
+```
+
+
+
 ### 프로그래머스_평균 구하기 2022_03_20
 문제
 ```
