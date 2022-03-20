@@ -1,4 +1,24 @@
 # testStudy 코딩테스트 풀고, 정리하기
+### 프로그래머스_평균 구하기 2022_03_20
+문제
+```
+정수를 담고 있는 배열 arr의 평균값을 return하는 함수, solution을 완성해보세요.
+```
+작성한 코드
+```
+function solution(arr) {
+    let result = 0;
+    for (let i = 0; i < arr.length; i++){
+        result += arr[i]
+    }
+    return result / arr.length;
+}
+```
+
+반복문에서 수를 더하기 위해 result를 0으로 선언함 ``` let result = 0; ``` <br>
+더해진 값들을 arr 갯수로 나누어 평균값을 만들어주는 것이 중요함 ``` result / arr.length ```
+
+
 ### 프로그래머스_핸드폰 번호 가리기 2022_03_18
 문제
 ```
