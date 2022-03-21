@@ -1,4 +1,45 @@
 # testStudy 코딩테스트 풀고, 정리하기
+### 프로그래머스_제일 작은 수 제거하기 2022_03_21
+* 문제
+```
+정수를 저장한 배열, arr 에서 가장 작은 수를 제거한 배열을 리턴하는 함수, solution을 완성해주세요. 
+단, 리턴하려는 배열이 빈 배열인 경우엔 배열에 -1을 채워 리턴하세요. 
+예를들어 arr이 [4,3,2,1]인 경우는 [4,3,2]를 리턴 하고, [10]면 [-1]을 리턴 합니다.
+```
+* 작성한 코드 (탈락)
+```
+function solution(arr) {
+    const minNum = Math.min(...arr);
+    arr.pop(minNum);
+    return arr.length !== 0 ? arr : [-1]; 
+}
+```
+배열에 존재하는 최소값을 찾기 위해 Math.min()함수를 이용해야 함 <br>
+나머지 매개변수를 이용하여 배열의 요소을 받아옴 <br>
+하지만 arr.pop 메소드에 대해 정확히 파악하지 못해서 제출 시 통과 못하였음
+
+* 작성한 코드 (통과)
+```
+function solution(arr) {
+    let minNum = Math.min(...arr);
+    if (arr.length === 1) {
+        return [-1]
+    } else {
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] === minNum){
+                arr.splice(i, 1);
+            }
+        }
+        return arr
+    }
+}
+```
+arr.length가 1인 배열은 바로 [-1]을 반환하도록 조건문을 작성하였음 <br>
+다른 배열의 경우는 ```splice(n, m) 메소드가 n번째 요소부터 m개를 지운다```는 특성을 이용하여 조건문 작성하였음 <br>
+반복문을 통해 미리 구해둔 minNum과 arr 요소들을 비교하여 같은 경우 삭제하고, 이후에 arr를 반환하는 방식으로 코드를 작성함
+
+---
+
 ### 프로그래머스_짝수와 홀수 2022_03_21
 * 문제
 ```
